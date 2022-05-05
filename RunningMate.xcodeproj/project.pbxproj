@@ -7,14 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		147027062824180900059328 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147027052824180900059328 /* HomeViewController.swift */; };
+		147027092824182900059328 /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147027082824182900059328 /* UINavigationController+Ext.swift */; };
+		1470270D282419EF00059328 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1470270C282419EF00059328 /* Image.xcassets */; };
+		1470271128241B6B00059328 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470271028241B6B00059328 /* Assets.swift */; };
+		1470271328241CA700059328 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470271228241CA700059328 /* UIImage+Ext.swift */; };
+		1470271528241D8500059328 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1470271428241D8500059328 /* Color.xcassets */; };
+		14702719282427B000059328 /* UINavigationItem+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14702718282427B000059328 /* UINavigationItem+Ext.swift */; };
+		1470271B28242C0100059328 /* BasePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470271A28242C0100059328 /* BasePanelViewController.swift */; };
+		1470271D28242C8500059328 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470271C28242C8500059328 /* BaseViewModel.swift */; };
+		1470272028242CC800059328 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470271F28242CC800059328 /* HomeViewModel.swift */; };
+		1470272228242E3C00059328 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470272128242E3C00059328 /* Network.swift */; };
+		1470272428242F5A00059328 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470272328242F5A00059328 /* NetworkProvider.swift */; };
+		1470272828242FD500059328 /* UsersNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470272728242FD500059328 /* UsersNetwork.swift */; };
+		1470272A2824302900059328 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147027292824302900059328 /* User.swift */; };
 		14CD7DAC282414C200BB83C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CD7DAB282414C200BB83C9 /* AppDelegate.swift */; };
 		14CD7DAE282414C200BB83C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CD7DAD282414C200BB83C9 /* SceneDelegate.swift */; };
 		14CD7DB5282414C300BB83C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CD7DB4282414C300BB83C9 /* Assets.xcassets */; };
 		14CD7DB8282414C300BB83C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CD7DB6282414C300BB83C9 /* LaunchScreen.storyboard */; };
 		14CD7DC9282415CD00BB83C9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CD7DC8282415CD00BB83C9 /* BaseViewController.swift */; };
+		767456824D416ECFC6F93C1E /* Pods_RunningMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD35F9053B9A658D0E02DC6 /* Pods_RunningMate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		147027052824180900059328 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		147027082824182900059328 /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
+		1470270C282419EF00059328 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		1470271028241B6B00059328 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		1470271228241CA700059328 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		1470271428241D8500059328 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		14702718282427B000059328 /* UINavigationItem+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Ext.swift"; sourceTree = "<group>"; };
+		1470271A28242C0100059328 /* BasePanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePanelViewController.swift; sourceTree = "<group>"; };
+		1470271C28242C8500059328 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		1470271F28242CC800059328 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1470272128242E3C00059328 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1470272328242F5A00059328 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		1470272728242FD500059328 /* UsersNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersNetwork.swift; sourceTree = "<group>"; };
+		147027292824302900059328 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		14CD7DA8282414C200BB83C9 /* RunningMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14CD7DAB282414C200BB83C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14CD7DAD282414C200BB83C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +51,9 @@
 		14CD7DB7282414C300BB83C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14CD7DB9282414C300BB83C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14CD7DC8282415CD00BB83C9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4CD35F9053B9A658D0E02DC6 /* Pods_RunningMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunningMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9606E5726500C2792FBBCDDE /* Pods-RunningMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunningMate.release.xcconfig"; path = "Target Support Files/Pods-RunningMate/Pods-RunningMate.release.xcconfig"; sourceTree = "<group>"; };
+		CDCC4CADF7C7AAB7559897A7 /* Pods-RunningMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunningMate.debug.xcconfig"; path = "Target Support Files/Pods-RunningMate/Pods-RunningMate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +61,104 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				767456824D416ECFC6F93C1E /* Pods_RunningMate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14702703282417F400059328 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				14702704282417FE00059328 /* ViewController */,
+				1470271E28242CBC00059328 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		14702704282417FE00059328 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				147027052824180900059328 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		147027072824181400059328 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				147027082824182900059328 /* UINavigationController+Ext.swift */,
+				14702718282427B000059328 /* UINavigationItem+Ext.swift */,
+				1470271228241CA700059328 /* UIImage+Ext.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1470270A2824186800059328 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				14CD7DC12824158A00BB83C9 /* Data */,
+				14CD7DC22824159000BB83C9 /* Domain */,
+				14CD7DC02824158400BB83C9 /* Presentation */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1470270B2824186D00059328 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1470270F28241B3400059328 /* Constant */,
+				14CD7DB4282414C300BB83C9 /* Assets.xcassets */,
+				1470270C282419EF00059328 /* Image.xcassets */,
+				1470271428241D8500059328 /* Color.xcassets */,
+				14CD7DB6282414C300BB83C9 /* LaunchScreen.storyboard */,
+				1470270E28241AE400059328 /* Support */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1470270E28241AE400059328 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				14CD7DAB282414C200BB83C9 /* AppDelegate.swift */,
+				14CD7DAD282414C200BB83C9 /* SceneDelegate.swift */,
+				14CD7DB9282414C300BB83C9 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1470270F28241B3400059328 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				1470271028241B6B00059328 /* Assets.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		1470271E28242CBC00059328 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1470271F28242CC800059328 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1470272528242FAC00059328 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1470272728242FD500059328 /* UsersNetwork.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		14CD7D9F282414C200BB83C9 = {
 			isa = PBXGroup;
 			children = (
 				14CD7DAA282414C200BB83C9 /* RunningMate */,
 				14CD7DA9282414C200BB83C9 /* Products */,
+				2D53525E27ED339E29F68030 /* Pods */,
+				EBC811AD6C28CBCAAEAF77C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,30 +173,18 @@
 		14CD7DAA282414C200BB83C9 /* RunningMate */ = {
 			isa = PBXGroup;
 			children = (
-				14CD7DAB282414C200BB83C9 /* AppDelegate.swift */,
-				14CD7DAD282414C200BB83C9 /* SceneDelegate.swift */,
-				14CD7DC12824158A00BB83C9 /* Data */,
-				14CD7DC22824159000BB83C9 /* Domain */,
-				14CD7DC02824158400BB83C9 /* Presentation */,
-				14CD7DBF2824157800BB83C9 /* Asset */,
-				14CD7DB6282414C300BB83C9 /* LaunchScreen.storyboard */,
-				14CD7DB9282414C300BB83C9 /* Info.plist */,
+				1470270A2824186800059328 /* Source */,
+				1470270B2824186D00059328 /* Resource */,
 			);
 			path = RunningMate;
-			sourceTree = "<group>";
-		};
-		14CD7DBF2824157800BB83C9 /* Asset */ = {
-			isa = PBXGroup;
-			children = (
-				14CD7DB4282414C300BB83C9 /* Assets.xcassets */,
-			);
-			path = Asset;
 			sourceTree = "<group>";
 		};
 		14CD7DC02824158400BB83C9 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				14CD7DC7282415C300BB83C9 /* Base */,
+				14702703282417F400059328 /* Home */,
+				147027072824181400059328 /* Utils */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -86,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				14CD7DC32824159700BB83C9 /* Network */,
+				1470272528242FAC00059328 /* API */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -103,6 +211,8 @@
 		14CD7DC32824159700BB83C9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				1470272128242E3C00059328 /* Network.swift */,
+				1470272328242F5A00059328 /* NetworkProvider.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -110,6 +220,7 @@
 		14CD7DC42824159B00BB83C9 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				147027292824302900059328 /* User.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -132,8 +243,27 @@
 			isa = PBXGroup;
 			children = (
 				14CD7DC8282415CD00BB83C9 /* BaseViewController.swift */,
+				1470271C28242C8500059328 /* BaseViewModel.swift */,
+				1470271A28242C0100059328 /* BasePanelViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		2D53525E27ED339E29F68030 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDCC4CADF7C7AAB7559897A7 /* Pods-RunningMate.debug.xcconfig */,
+				9606E5726500C2792FBBCDDE /* Pods-RunningMate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EBC811AD6C28CBCAAEAF77C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CD35F9053B9A658D0E02DC6 /* Pods_RunningMate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14CD7DBC282414C300BB83C9 /* Build configuration list for PBXNativeTarget "RunningMate" */;
 			buildPhases = (
+				5AB00C0F8EDC323BCB5D241D /* [CP] Check Pods Manifest.lock */,
 				14CD7DA4282414C200BB83C9 /* Sources */,
 				14CD7DA5282414C200BB83C9 /* Frameworks */,
 				14CD7DA6282414C200BB83C9 /* Resources */,
+				5803027554B0CCD8A3700221 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,20 +327,76 @@
 			buildActionMask = 2147483647;
 			files = (
 				14CD7DB8282414C300BB83C9 /* LaunchScreen.storyboard in Resources */,
+				1470271528241D8500059328 /* Color.xcassets in Resources */,
+				1470270D282419EF00059328 /* Image.xcassets in Resources */,
 				14CD7DB5282414C300BB83C9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5803027554B0CCD8A3700221 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RunningMate/Pods-RunningMate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RunningMate/Pods-RunningMate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RunningMate/Pods-RunningMate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AB00C0F8EDC323BCB5D241D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RunningMate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		14CD7DA4282414C200BB83C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1470271328241CA700059328 /* UIImage+Ext.swift in Sources */,
+				1470272428242F5A00059328 /* NetworkProvider.swift in Sources */,
+				1470272028242CC800059328 /* HomeViewModel.swift in Sources */,
+				1470272228242E3C00059328 /* Network.swift in Sources */,
+				1470271D28242C8500059328 /* BaseViewModel.swift in Sources */,
 				14CD7DAC282414C200BB83C9 /* AppDelegate.swift in Sources */,
+				147027092824182900059328 /* UINavigationController+Ext.swift in Sources */,
+				1470271128241B6B00059328 /* Assets.swift in Sources */,
+				1470272A2824302900059328 /* User.swift in Sources */,
+				1470271B28242C0100059328 /* BasePanelViewController.swift in Sources */,
 				14CD7DAE282414C200BB83C9 /* SceneDelegate.swift in Sources */,
 				14CD7DC9282415CD00BB83C9 /* BaseViewController.swift in Sources */,
+				1470272828242FD500059328 /* UsersNetwork.swift in Sources */,
+				14702719282427B000059328 /* UINavigationItem+Ext.swift in Sources */,
+				147027062824180900059328 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -330,6 +519,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -342,6 +532,7 @@
 		};
 		14CD7DBD282414C300BB83C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDCC4CADF7C7AAB7559897A7 /* Pods-RunningMate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -349,7 +540,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PX37AVLC5L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RunningMate/Info.plist;
+				INFOPLIST_FILE = RunningMate/Resource/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -371,6 +562,7 @@
 		};
 		14CD7DBE282414C300BB83C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9606E5726500C2792FBBCDDE /* Pods-RunningMate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -378,7 +570,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PX37AVLC5L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RunningMate/Info.plist;
+				INFOPLIST_FILE = RunningMate/Resource/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

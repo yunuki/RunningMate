@@ -12,6 +12,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        self.navigationController?.initNaviBarWithBackButton()
     }
     
     func updateUI() {
