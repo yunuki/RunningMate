@@ -28,7 +28,7 @@ class HomeViewController: BaseViewController {
     private func initNavigationBar() {
         self.navigationController?.initNavigationBar(
             navigationItem: navigationItem,
-            rightButtonImages: [Asset.Image.Profile, Asset.Image.Ranking],
+            rightButtonImages: [Asset.Image.ProfileBtn, Asset.Image.RankingBtn],
             rightActions: [#selector(pushProfileVC(_:)), #selector(pushRankingVC(_:))])
     }
     
