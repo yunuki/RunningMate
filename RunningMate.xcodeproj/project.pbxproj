@@ -15,12 +15,24 @@
 		1470271528241D8500059328 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1470271428241D8500059328 /* Color.xcassets */; };
 		14702719282427B000059328 /* UINavigationItem+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14702718282427B000059328 /* UINavigationItem+Ext.swift */; };
 		1470271B28242C0100059328 /* BasePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470271A28242C0100059328 /* BasePanelViewController.swift */; };
-		1470271D28242C8500059328 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470271C28242C8500059328 /* BaseViewModel.swift */; };
+		1470271D28242C8500059328 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470271C28242C8500059328 /* ViewModelType.swift */; };
 		1470272028242CC800059328 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470271F28242CC800059328 /* HomeViewModel.swift */; };
 		1470272228242E3C00059328 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470272128242E3C00059328 /* Network.swift */; };
 		1470272428242F5A00059328 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470272328242F5A00059328 /* NetworkProvider.swift */; };
-		1470272828242FD500059328 /* UsersNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470272728242FD500059328 /* UsersNetwork.swift */; };
+		1470272828242FD500059328 /* UserNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470272728242FD500059328 /* UserNetwork.swift */; };
 		1470272A2824302900059328 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147027292824302900059328 /* User.swift */; };
+		14ACD353282BB16C004D724A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD352282BB16C004D724A /* SignInViewController.swift */; };
+		14ACD357282BB855004D724A /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD356282BB855004D724A /* UserRepository.swift */; };
+		14ACD359282BBA4A004D724A /* UserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD358282BBA4A004D724A /* UserUseCase.swift */; };
+		14ACD361282BC149004D724A /* UserRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD360282BC149004D724A /* UserRequestModel.swift */; };
+		14ACD363282BC372004D724A /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD362282BC372004D724A /* SignInViewModel.swift */; };
+		14ACD365282BC61F004D724A /* SignInNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD364282BC61F004D724A /* SignInNavigator.swift */; };
+		14ACD367282BC6C8004D724A /* AuthNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD366282BC6C8004D724A /* AuthNetwork.swift */; };
+		14ACD369282BC709004D724A /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD368282BC709004D724A /* Auth.swift */; };
+		14ACD36B282BC7E1004D724A /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD36A282BC7E1004D724A /* AuthRepository.swift */; };
+		14ACD36D282BC843004D724A /* AuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD36C282BC843004D724A /* AuthUseCase.swift */; };
+		14C9514C2825098700E22336 /* AppleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C9514B2825098700E22336 /* AppleSignInManager.swift */; };
+		14C9514F2825106B00E22336 /* RecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C9514E2825106B00E22336 /* RecordManager.swift */; };
 		14CD7DAC282414C200BB83C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CD7DAB282414C200BB83C9 /* AppDelegate.swift */; };
 		14CD7DAE282414C200BB83C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CD7DAD282414C200BB83C9 /* SceneDelegate.swift */; };
 		14CD7DB5282414C300BB83C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CD7DB4282414C300BB83C9 /* Assets.xcassets */; };
@@ -38,12 +50,25 @@
 		1470271428241D8500059328 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		14702718282427B000059328 /* UINavigationItem+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Ext.swift"; sourceTree = "<group>"; };
 		1470271A28242C0100059328 /* BasePanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePanelViewController.swift; sourceTree = "<group>"; };
-		1470271C28242C8500059328 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		1470271C28242C8500059328 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		1470271F28242CC800059328 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		1470272128242E3C00059328 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1470272328242F5A00059328 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
-		1470272728242FD500059328 /* UsersNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersNetwork.swift; sourceTree = "<group>"; };
+		1470272728242FD500059328 /* UserNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetwork.swift; sourceTree = "<group>"; };
 		147027292824302900059328 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		14ACD350282BB0CA004D724A /* RunningMate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunningMate.entitlements; sourceTree = "<group>"; };
+		14ACD352282BB16C004D724A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		14ACD356282BB855004D724A /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		14ACD358282BBA4A004D724A /* UserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUseCase.swift; sourceTree = "<group>"; };
+		14ACD360282BC149004D724A /* UserRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequestModel.swift; sourceTree = "<group>"; };
+		14ACD362282BC372004D724A /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		14ACD364282BC61F004D724A /* SignInNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInNavigator.swift; sourceTree = "<group>"; };
+		14ACD366282BC6C8004D724A /* AuthNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetwork.swift; sourceTree = "<group>"; };
+		14ACD368282BC709004D724A /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		14ACD36A282BC7E1004D724A /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		14ACD36C282BC843004D724A /* AuthUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUseCase.swift; sourceTree = "<group>"; };
+		14C9514B2825098700E22336 /* AppleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInManager.swift; sourceTree = "<group>"; };
+		14C9514E2825106B00E22336 /* RecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordManager.swift; sourceTree = "<group>"; };
 		14CD7DA8282414C200BB83C9 /* RunningMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14CD7DAB282414C200BB83C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14CD7DAD282414C200BB83C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +126,7 @@
 				14CD7DC12824158A00BB83C9 /* Data */,
 				14CD7DC22824159000BB83C9 /* Domain */,
 				14CD7DC02824158400BB83C9 /* Presentation */,
+				14C9514D2825104800E22336 /* Utils */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -147,9 +173,37 @@
 		1470272528242FAC00059328 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				1470272728242FD500059328 /* UsersNetwork.swift */,
+				14ACD366282BC6C8004D724A /* AuthNetwork.swift */,
+				1470272728242FD500059328 /* UserNetwork.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		14ACD351282BB158004D724A /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				14ACD352282BB16C004D724A /* SignInViewController.swift */,
+				14ACD362282BC372004D724A /* SignInViewModel.swift */,
+				14ACD364282BC61F004D724A /* SignInNavigator.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		14ACD35F282BC13A004D724A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14ACD360282BC149004D724A /* UserRequestModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14C9514D2825104800E22336 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				14C9514B2825098700E22336 /* AppleSignInManager.swift */,
+				14C9514E2825106B00E22336 /* RecordManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		14CD7D9F282414C200BB83C9 = {
@@ -173,6 +227,7 @@
 		14CD7DAA282414C200BB83C9 /* RunningMate */ = {
 			isa = PBXGroup;
 			children = (
+				14ACD350282BB0CA004D724A /* RunningMate.entitlements */,
 				1470270A2824186800059328 /* Source */,
 				1470270B2824186D00059328 /* Resource */,
 			);
@@ -183,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				14CD7DC7282415C300BB83C9 /* Base */,
+				14ACD351282BB158004D724A /* SignIn */,
 				14702703282417F400059328 /* Home */,
 				147027072824181400059328 /* Utils */,
 			);
@@ -194,6 +250,7 @@
 			children = (
 				14CD7DC32824159700BB83C9 /* Network */,
 				1470272528242FAC00059328 /* API */,
+				14ACD35F282BC13A004D724A /* Model */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -220,6 +277,7 @@
 		14CD7DC42824159B00BB83C9 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				14ACD368282BC709004D724A /* Auth.swift */,
 				147027292824302900059328 /* User.swift */,
 			);
 			path = Entity;
@@ -228,6 +286,8 @@
 		14CD7DC5282415A300BB83C9 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				14ACD36A282BC7E1004D724A /* AuthRepository.swift */,
+				14ACD356282BB855004D724A /* UserRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -235,6 +295,8 @@
 		14CD7DC6282415A800BB83C9 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				14ACD36C282BC843004D724A /* AuthUseCase.swift */,
+				14ACD358282BBA4A004D724A /* UserUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -242,8 +304,8 @@
 		14CD7DC7282415C300BB83C9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				1470271C28242C8500059328 /* ViewModelType.swift */,
 				14CD7DC8282415CD00BB83C9 /* BaseViewController.swift */,
-				1470271C28242C8500059328 /* BaseViewModel.swift */,
 				1470271A28242C0100059328 /* BasePanelViewController.swift */,
 			);
 			path = Base;
@@ -384,18 +446,30 @@
 			files = (
 				1470271328241CA700059328 /* UIImage+Ext.swift in Sources */,
 				1470272428242F5A00059328 /* NetworkProvider.swift in Sources */,
+				14ACD367282BC6C8004D724A /* AuthNetwork.swift in Sources */,
+				14ACD353282BB16C004D724A /* SignInViewController.swift in Sources */,
 				1470272028242CC800059328 /* HomeViewModel.swift in Sources */,
 				1470272228242E3C00059328 /* Network.swift in Sources */,
-				1470271D28242C8500059328 /* BaseViewModel.swift in Sources */,
+				1470271D28242C8500059328 /* ViewModelType.swift in Sources */,
 				14CD7DAC282414C200BB83C9 /* AppDelegate.swift in Sources */,
+				14ACD359282BBA4A004D724A /* UserUseCase.swift in Sources */,
 				147027092824182900059328 /* UINavigationController+Ext.swift in Sources */,
 				1470271128241B6B00059328 /* Assets.swift in Sources */,
+				14C9514C2825098700E22336 /* AppleSignInManager.swift in Sources */,
+				14ACD369282BC709004D724A /* Auth.swift in Sources */,
 				1470272A2824302900059328 /* User.swift in Sources */,
+				14ACD36B282BC7E1004D724A /* AuthRepository.swift in Sources */,
 				1470271B28242C0100059328 /* BasePanelViewController.swift in Sources */,
+				14ACD363282BC372004D724A /* SignInViewModel.swift in Sources */,
+				14ACD361282BC149004D724A /* UserRequestModel.swift in Sources */,
 				14CD7DAE282414C200BB83C9 /* SceneDelegate.swift in Sources */,
 				14CD7DC9282415CD00BB83C9 /* BaseViewController.swift in Sources */,
-				1470272828242FD500059328 /* UsersNetwork.swift in Sources */,
+				1470272828242FD500059328 /* UserNetwork.swift in Sources */,
+				14ACD365282BC61F004D724A /* SignInNavigator.swift in Sources */,
+				14ACD36D282BC843004D724A /* AuthUseCase.swift in Sources */,
+				14C9514F2825106B00E22336 /* RecordManager.swift in Sources */,
 				14702719282427B000059328 /* UINavigationItem+Ext.swift in Sources */,
+				14ACD357282BB855004D724A /* UserRepository.swift in Sources */,
 				147027062824180900059328 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,6 +610,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RunningMate/RunningMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PX37AVLC5L;
@@ -566,6 +641,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RunningMate/RunningMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PX37AVLC5L;

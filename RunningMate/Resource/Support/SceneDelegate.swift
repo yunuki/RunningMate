@@ -19,8 +19,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         window?.windowScene = windowScene
-        let homeVC = HomeViewController(viewModel: HomeViewModel())
-        let nav = UINavigationController(rootViewController: homeVC)
+        let nav = UINavigationController()
+        let signInVC = SignInViewController(
+            viewModel: SignInViewModel(
+                authUseCase: DefaultAuthUseCase(authRepository: DefaultAuthRepository(authNetwork: NetworkProvider.shared.makeAuthNetwork())), navigator: SignInNavigator(navigationController: nav)
+            )
+        )
+        nav.pushViewController(signInVC, animated: false)
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }

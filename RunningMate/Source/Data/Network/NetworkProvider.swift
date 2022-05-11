@@ -8,15 +8,21 @@
 import Foundation
 
 final class NetworkProvider {
+    static let shared = NetworkProvider()
     private let apiEndPoint: String
     
     init() {
         self.apiEndPoint = ""
     }
     
-    func makeUsersNetwork() -> UsersNetwork {
+    func makeAuthNetwork() -> AuthNetwork {
+        let network = Network<Auth>(apiEndPoint)
+        return AuthNetwork(network: network)
+    }
+    
+    func makeUsersNetwork() -> UserNetwork {
         let network = Network<User>(apiEndPoint)
-        return UsersNetwork(network: network)
+        return UserNetwork(network: network)
     }
     
 }
