@@ -9,8 +9,7 @@ import UIKit
 
 extension UINavigationController {
     private var backButtonImage: UIImage? {
-        return Asset.Image.BackBtn.resizeImage(to: CGSize(width: 10.5, height: 21))
-            .withAlignmentRectInsets(UIEdgeInsets(top: 0, left: -16, bottom: 0, right: 0))
+        return Asset.Image.btnBack
     }
     
     private var backButtonAppearance: UIBarButtonItemAppearance {
