@@ -9,13 +9,15 @@ import UIKit
 
 internal enum Asset {
     internal enum Image {
-        internal static let BackBtn = UIImage(named: "BackBtn")!
-        internal static let RankingBtn = UIImage(named: "RankingBtn")!
-        internal static let ProfileBtn = UIImage(named: "ProfileBtn")!
+        internal static let imgLogo = UIImage(named: "imgLogo")!
+        internal static let btnBack = UIImage(named: "btnBack")!
+        internal static let icnRank = UIImage(named: "icnRank")!
+        internal static let icnMyPage = UIImage(named: "icnMyPage")!
     }
     
     internal enum Color {
-        internal static let GrayC4 = UIColor(named: "GrayC4")!
+        internal static let RunningMate = UIColor(named: "RunningMate")!
+        internal static let Black = UIColor(named: "Black")!
     }
 }
 

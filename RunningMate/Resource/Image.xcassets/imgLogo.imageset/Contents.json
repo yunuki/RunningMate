@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "iconoir_profile-circled.png",
+      "filename" : "imgLogotype.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "iconoir_profile-circled@2x.png",
+      "filename" : "imgLogotype@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "iconoir_profile-circled@3x.png",
+      "filename" : "imgLogotype@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
