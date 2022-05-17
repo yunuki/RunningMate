@@ -36,7 +36,7 @@ class SignInViewController: BaseViewController {
     
     private let viewModel: SignInViewModel
     private let disposeBag = DisposeBag()
-    private let authTokenSubject = PublishSubject<String>()
+    private let authCodeSubject = PublishSubject<String>()
     
     init(viewModel: SignInViewModel) {
         self.viewModel = viewModel
@@ -55,26 +55,37 @@ class SignInViewController: BaseViewController {
     override func setConstraints() {
         self.view.addSubview(appleSignInBtn)
         appleSignInBtn.snp.makeConstraints { make in
-            make.center.equalToSuperview()
+            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-100)
             make.width.equalTo(300)
             make.height.equalTo(80)
         }
     }
     
     func bindViewModel() {
+        
+        let viewDidLoad = rx.sentMessage(#selector(viewDidLoad))
+            .map{_ in}
+            .asDriver(onErrorRecover: {_ in Driver.empty()})
+        
         let output = self.viewModel.transform(input: SignInViewModel.Input(
-            authTokenTrigger: authTokenSubject.asDriver(onErrorRecover: {_ in Driver.empty()})
+            viewDidLoad: viewDidLoad,
+            authCodeTrigger: authCodeSubject.asDriver(onErrorRecover: {_ in Driver.empty()})
         ))
         
         output.doAuth
             .drive()
+            .disposed(by: disposeBag)
+        
+        output.isLoading
+            .drive(onNext: LoadingIndicator.handleLoading(_:))
             .disposed(by: disposeBag)
     }
 }
 
 extension SignInViewController: AppleSignInManagerDelegate {
     func success(authorizationCode: String) {
-        authTokenSubject.onNext(authorizationCode)
+        authCodeSubject.onNext(authorizationCode)
     }
     
     func fail(error: AppleSignInManager.AppleSignInError) {

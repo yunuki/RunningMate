@@ -20,32 +20,49 @@ class SignInViewModel: ViewModelType {
     }
     
     struct Input {
-        let authTokenTrigger: Driver<String>
+        let viewDidLoad: Driver<Void>
+        let authCodeTrigger: Driver<String>
     }
     
     struct Output {
-        let doAuth: Driver<User?>
+        let doAuth: Driver<Auth>
+        let isLoading: Driver<Bool>
     }
     
     func transform(input: Input) -> Output {
         
-        let doAuth = input.authTokenTrigger
-            .flatMapLatest { [weak self] token -> Driver<User?> in
-                guard let `self` = self else {return Driver.empty()}
-                return self.authUseCase.auth(token: token)
-                    .map{$0.user}
-                    .asDriver(onErrorJustReturn: nil)
-            }
-            .do(onNext: {[weak self] user in
-                if let _ = user {
-                    self?.navigator.setHomeAsRoot()
-                } else {
+        let activityIndicator = ActivityIndicator()
+        
+        let doAuth = Driver.merge(
+            input.viewDidLoad
+                .compactMap{_ in UserDefaults.standard.string(forKey: UDKey.token)}
+                .flatMapLatest { [weak self] token -> Driver<Auth> in
+                    guard let `self` = self else {return Driver.empty()}
+                    return self.authUseCase.auth(token: token)
+                        .trackActivity(activityIndicator)
+                        .asDriver(onErrorRecover: {_ in Driver.empty()})
+                },
+            input.authCodeTrigger
+                .flatMapLatest { [weak self] code -> Driver<Auth> in
+                    guard let `self` = self else {return Driver.empty()}
+                    return self.authUseCase.auth(code: code)
+                        .trackActivity(activityIndicator)
+                        .asDriver(onErrorRecover: {_ in Driver.empty()})
+                }
+            )
+            .do(onNext: {[weak self] auth in
+                UserManager.shared.setUser(auth.user)
+                UserDefaults.standard.set(auth.token, forKey: UDKey.token)
+                if auth.isNew {
                     self?.navigator.pushSignUp()
+                } else {
+                    self?.navigator.setHomeAsRoot()
                 }
             })
         
         return Output(
-            doAuth: doAuth
+            doAuth: doAuth,
+            isLoading: activityIndicator.asDriver()
         )
     }
 }

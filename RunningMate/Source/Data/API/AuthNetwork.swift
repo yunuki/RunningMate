@@ -15,8 +15,14 @@ final class AuthNetwork {
         self.network = network
     }
     
+    func postAuth(code: String) -> Observable<Auth> {
+        return network.postItem("oauth/apple", parameters: [
+            "code": code
+        ])
+    }
+    
     func postAuth(token: String) -> Observable<Auth> {
-        return network.postItem("auth", parameters: [
+        return network.postItem("oauth/apple", parameters: [
             "token": token
         ])
     }

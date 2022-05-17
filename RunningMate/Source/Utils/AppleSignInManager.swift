@@ -39,10 +39,12 @@ extension AppleSignInManager: ASAuthorizationControllerDelegate {
         
         guard let credential = authorization.credential as? ASAuthorizationAppleIDCredential,
               let authorizationCodeData = credential.authorizationCode,
-            let authorizationCode = String(data: authorizationCodeData, encoding: .utf8) else {
+              let authorizationCode = String(data: authorizationCodeData, encoding: .utf8) else {
             delegate?.fail(error: .decode)
             return
         }
+        
+        print(authorizationCode)
         delegate?.success(authorizationCode: authorizationCode)
     }
     

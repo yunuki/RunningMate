@@ -21,6 +21,26 @@
 		1470272428242F5A00059328 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470272328242F5A00059328 /* NetworkProvider.swift */; };
 		1470272828242FD500059328 /* UserNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470272728242FD500059328 /* UserNetwork.swift */; };
 		1470272A2824302900059328 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147027292824302900059328 /* User.swift */; };
+		148007E9283358EB0075B30B /* UDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148007E8283358EB0075B30B /* UDKey.swift */; };
+		148007EB28335BAD0075B30B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148007EA28335BAD0075B30B /* ActivityIndicator.swift */; };
+		148007ED283387780075B30B /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148007EC283387780075B30B /* LoadingIndicator.swift */; };
+		148C4BFE282E6428004ED112 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4BFD282E6428004ED112 /* UIViewController+Ext.swift */; };
+		148C4C01282E6593004ED112 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C00282E6593004ED112 /* RecordViewController.swift */; };
+		148C4C25282F9457004ED112 /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C24282F9457004ED112 /* Font+Ext.swift */; };
+		148C4C2F282F9671004ED112 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C2E282F9671004ED112 /* UIButton+Ext.swift */; };
+		148C4C31282F969C004ED112 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C30282F969C004ED112 /* UIView+Ext.swift */; };
+		148C4C3F282FA58E004ED112 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C3E282FA58E004ED112 /* Date+Ext.swift */; };
+		148C4C41282FA6CF004ED112 /* HomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C40282FA6CF004ED112 /* HomeNavigator.swift */; };
+		148C4C45282FAF9E004ED112 /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C44282FAF9E004ED112 /* RecordViewModel.swift */; };
+		148C4C48282FAFDC004ED112 /* RecordNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C47282FAFDC004ED112 /* RecordNavigator.swift */; };
+		148C4C4D28314A86004ED112 /* NanumSquareRoundOTFEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 148C4C4928314A86004ED112 /* NanumSquareRoundOTFEB.otf */; };
+		148C4C4E28314A86004ED112 /* NanumSquareRoundOTFR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 148C4C4A28314A86004ED112 /* NanumSquareRoundOTFR.otf */; };
+		148C4C4F28314A86004ED112 /* NanumSquareRoundOTFB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 148C4C4B28314A86004ED112 /* NanumSquareRoundOTFB.otf */; };
+		148C4C5028314A86004ED112 /* NanumSquareRoundOTFL.otf in Resources */ = {isa = PBXBuildFile; fileRef = 148C4C4C28314A86004ED112 /* NanumSquareRoundOTFL.otf */; };
+		148C4C52283151D8004ED112 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C51283151D8004ED112 /* UserManager.swift */; };
+		148C4C542831533B004ED112 /* CGFloat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C532831533B004ED112 /* CGFloat+Ext.swift */; };
+		148C4C5728315F3D004ED112 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C5628315F3D004ED112 /* SignUpViewController.swift */; };
+		148C4C5928315F61004ED112 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C5828315F61004ED112 /* SignUpViewModel.swift */; };
 		14ACD353282BB16C004D724A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD352282BB16C004D724A /* SignInViewController.swift */; };
 		14ACD357282BB855004D724A /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD356282BB855004D724A /* UserRepository.swift */; };
 		14ACD359282BBA4A004D724A /* UserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD358282BBA4A004D724A /* UserUseCase.swift */; };
@@ -56,6 +76,26 @@
 		1470272328242F5A00059328 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		1470272728242FD500059328 /* UserNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetwork.swift; sourceTree = "<group>"; };
 		147027292824302900059328 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		148007E8283358EB0075B30B /* UDKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDKey.swift; sourceTree = "<group>"; };
+		148007EA28335BAD0075B30B /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		148007EC283387780075B30B /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		148C4BFD282E6428004ED112 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		148C4C00282E6593004ED112 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		148C4C24282F9457004ED112 /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
+		148C4C2E282F9671004ED112 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		148C4C30282F969C004ED112 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		148C4C3E282FA58E004ED112 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		148C4C40282FA6CF004ED112 /* HomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigator.swift; sourceTree = "<group>"; };
+		148C4C44282FAF9E004ED112 /* RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModel.swift; sourceTree = "<group>"; };
+		148C4C47282FAFDC004ED112 /* RecordNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordNavigator.swift; sourceTree = "<group>"; };
+		148C4C4928314A86004ED112 /* NanumSquareRoundOTFEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundOTFEB.otf; sourceTree = "<group>"; };
+		148C4C4A28314A86004ED112 /* NanumSquareRoundOTFR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundOTFR.otf; sourceTree = "<group>"; };
+		148C4C4B28314A86004ED112 /* NanumSquareRoundOTFB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundOTFB.otf; sourceTree = "<group>"; };
+		148C4C4C28314A86004ED112 /* NanumSquareRoundOTFL.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundOTFL.otf; sourceTree = "<group>"; };
+		148C4C51283151D8004ED112 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		148C4C532831533B004ED112 /* CGFloat+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ext.swift"; sourceTree = "<group>"; };
+		148C4C5628315F3D004ED112 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		148C4C5828315F61004ED112 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		14ACD350282BB0CA004D724A /* RunningMate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunningMate.entitlements; sourceTree = "<group>"; };
 		14ACD352282BB16C004D724A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		14ACD356282BB855004D724A /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
@@ -98,6 +138,7 @@
 			children = (
 				14702704282417FE00059328 /* ViewController */,
 				1470271E28242CBC00059328 /* ViewModel */,
+				148C4C42282FA700004ED112 /* Navigator */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -116,6 +157,11 @@
 				147027082824182900059328 /* UINavigationController+Ext.swift */,
 				14702718282427B000059328 /* UINavigationItem+Ext.swift */,
 				1470271228241CA700059328 /* UIImage+Ext.swift */,
+				148C4BFD282E6428004ED112 /* UIViewController+Ext.swift */,
+				148C4C2E282F9671004ED112 /* UIButton+Ext.swift */,
+				148C4C30282F969C004ED112 /* UIView+Ext.swift */,
+				148C4C3E282FA58E004ED112 /* Date+Ext.swift */,
+				148C4C532831533B004ED112 /* CGFloat+Ext.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -134,6 +180,7 @@
 		1470270B2824186D00059328 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				148C4C13282F9382004ED112 /* Font */,
 				1470270F28241B3400059328 /* Constant */,
 				14CD7DB4282414C300BB83C9 /* Assets.xcassets */,
 				1470270C282419EF00059328 /* Image.xcassets */,
@@ -158,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				1470271028241B6B00059328 /* Assets.swift */,
+				148007E8283358EB0075B30B /* UDKey.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -177,6 +225,69 @@
 				1470272728242FD500059328 /* UserNetwork.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		148C4BFF282E6585004ED112 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				148C4C02282E659B004ED112 /* ViewController */,
+				148C4C43282FAF90004ED112 /* ViewModel */,
+				148C4C46282FAFD2004ED112 /* Navigator */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		148C4C02282E659B004ED112 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				148C4C00282E6593004ED112 /* RecordViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		148C4C13282F9382004ED112 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				148C4C4B28314A86004ED112 /* NanumSquareRoundOTFB.otf */,
+				148C4C4928314A86004ED112 /* NanumSquareRoundOTFEB.otf */,
+				148C4C4C28314A86004ED112 /* NanumSquareRoundOTFL.otf */,
+				148C4C4A28314A86004ED112 /* NanumSquareRoundOTFR.otf */,
+				148C4C24282F9457004ED112 /* Font+Ext.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		148C4C42282FA700004ED112 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				148C4C40282FA6CF004ED112 /* HomeNavigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		148C4C43282FAF90004ED112 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				148C4C44282FAF9E004ED112 /* RecordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		148C4C46282FAFD2004ED112 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				148C4C47282FAFDC004ED112 /* RecordNavigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		148C4C5528315F2A004ED112 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				148C4C5628315F3D004ED112 /* SignUpViewController.swift */,
+				148C4C5828315F61004ED112 /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		14ACD351282BB158004D724A /* SignIn */ = {
@@ -202,6 +313,9 @@
 			children = (
 				14C9514B2825098700E22336 /* AppleSignInManager.swift */,
 				14C9514E2825106B00E22336 /* RecordManager.swift */,
+				148C4C51283151D8004ED112 /* UserManager.swift */,
+				148007EA28335BAD0075B30B /* ActivityIndicator.swift */,
+				148007EC283387780075B30B /* LoadingIndicator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -239,7 +353,9 @@
 			children = (
 				14CD7DC7282415C300BB83C9 /* Base */,
 				14ACD351282BB158004D724A /* SignIn */,
+				148C4C5528315F2A004ED112 /* SignUp */,
 				14702703282417F400059328 /* Home */,
+				148C4BFF282E6585004ED112 /* Record */,
 				147027072824181400059328 /* Utils */,
 			);
 			path = Presentation;
@@ -388,10 +504,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148C4C4E28314A86004ED112 /* NanumSquareRoundOTFR.otf in Resources */,
 				14CD7DB8282414C300BB83C9 /* LaunchScreen.storyboard in Resources */,
+				148C4C4F28314A86004ED112 /* NanumSquareRoundOTFB.otf in Resources */,
 				1470271528241D8500059328 /* Color.xcassets in Resources */,
+				148C4C5028314A86004ED112 /* NanumSquareRoundOTFL.otf in Resources */,
 				1470270D282419EF00059328 /* Image.xcassets in Resources */,
 				14CD7DB5282414C300BB83C9 /* Assets.xcassets in Resources */,
+				148C4C4D28314A86004ED112 /* NanumSquareRoundOTFEB.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,21 +564,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148C4C31282F969C004ED112 /* UIView+Ext.swift in Sources */,
 				1470271328241CA700059328 /* UIImage+Ext.swift in Sources */,
+				148C4C5928315F61004ED112 /* SignUpViewModel.swift in Sources */,
 				1470272428242F5A00059328 /* NetworkProvider.swift in Sources */,
+				148007EB28335BAD0075B30B /* ActivityIndicator.swift in Sources */,
+				148C4BFE282E6428004ED112 /* UIViewController+Ext.swift in Sources */,
 				14ACD367282BC6C8004D724A /* AuthNetwork.swift in Sources */,
+				148007E9283358EB0075B30B /* UDKey.swift in Sources */,
 				14ACD353282BB16C004D724A /* SignInViewController.swift in Sources */,
+				148C4C48282FAFDC004ED112 /* RecordNavigator.swift in Sources */,
+				148C4C3F282FA58E004ED112 /* Date+Ext.swift in Sources */,
 				1470272028242CC800059328 /* HomeViewModel.swift in Sources */,
+				148C4C45282FAF9E004ED112 /* RecordViewModel.swift in Sources */,
 				1470272228242E3C00059328 /* Network.swift in Sources */,
 				1470271D28242C8500059328 /* ViewModelType.swift in Sources */,
+				148C4C542831533B004ED112 /* CGFloat+Ext.swift in Sources */,
+				148C4C25282F9457004ED112 /* Font+Ext.swift in Sources */,
 				14CD7DAC282414C200BB83C9 /* AppDelegate.swift in Sources */,
+				148C4C01282E6593004ED112 /* RecordViewController.swift in Sources */,
 				14ACD359282BBA4A004D724A /* UserUseCase.swift in Sources */,
 				147027092824182900059328 /* UINavigationController+Ext.swift in Sources */,
 				1470271128241B6B00059328 /* Assets.swift in Sources */,
+				148C4C52283151D8004ED112 /* UserManager.swift in Sources */,
 				14C9514C2825098700E22336 /* AppleSignInManager.swift in Sources */,
 				14ACD369282BC709004D724A /* Auth.swift in Sources */,
 				1470272A2824302900059328 /* User.swift in Sources */,
 				14ACD36B282BC7E1004D724A /* AuthRepository.swift in Sources */,
+				148C4C5728315F3D004ED112 /* SignUpViewController.swift in Sources */,
+				148C4C41282FA6CF004ED112 /* HomeNavigator.swift in Sources */,
 				1470271B28242C0100059328 /* BasePanelViewController.swift in Sources */,
 				14ACD363282BC372004D724A /* SignInViewModel.swift in Sources */,
 				14ACD361282BC149004D724A /* UserRequestModel.swift in Sources */,
@@ -468,6 +602,8 @@
 				14ACD365282BC61F004D724A /* SignInNavigator.swift in Sources */,
 				14ACD36D282BC843004D724A /* AuthUseCase.swift in Sources */,
 				14C9514F2825106B00E22336 /* RecordManager.swift in Sources */,
+				148C4C2F282F9671004ED112 /* UIButton+Ext.swift in Sources */,
+				148007ED283387780075B30B /* LoadingIndicator.swift in Sources */,
 				14702719282427B000059328 /* UINavigationItem+Ext.swift in Sources */,
 				14ACD357282BB855004D724A /* UserRepository.swift in Sources */,
 				147027062824180900059328 /* HomeViewController.swift in Sources */,
@@ -614,6 +750,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PX37AVLC5L;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RunningMate/Resource/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -645,6 +782,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PX37AVLC5L;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RunningMate/Resource/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

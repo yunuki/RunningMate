@@ -15,13 +15,15 @@ class SignInNavigator {
     }
     
     func pushSignUp() {
-        
+        let signUpVC = SignUpViewController()
+        self.navigationController?.pushViewController(signUpVC, animated: true)
     }
     
     func setHomeAsRoot() {
         let window = self.navigationController?.topViewController?.view.window
-        let homeVC = HomeViewController(viewModel: HomeViewModel())
-        let nav = UINavigationController(rootViewController: homeVC)
+        let nav = UINavigationController()
+        let homeVC = HomeViewController(viewModel: HomeViewModel(navigator: HomeNavigator(navigationController: nav)))
+        nav.pushViewController(homeVC, animated: false)
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }

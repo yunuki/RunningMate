@@ -9,6 +9,7 @@ import Foundation
 import RxSwift
 
 protocol AuthRepository {
+    func auth(code: String) -> Observable<Auth>
     func auth(token: String) -> Observable<Auth>
 }
 
@@ -17,6 +18,10 @@ final class DefaultAuthRepository: AuthRepository {
     
     init(authNetwork: AuthNetwork) {
         self.authNetwork = authNetwork
+    }
+    
+    func auth(code: String) -> Observable<Auth> {
+        return authNetwork.postAuth(code: code)
     }
     
     func auth(token: String) -> Observable<Auth> {

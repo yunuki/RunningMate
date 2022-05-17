@@ -8,9 +8,13 @@
 import Foundation
 
 struct Auth: Codable {
-    var user: User?
+    let user: User
+    let token: String
+    let isNew: Bool
     
     enum CodingKeys: String, CodingKey {
-        case user
+        case user = "account"
+        case token = "refresh_token"
+        case isNew = "is_new"
     }
 }

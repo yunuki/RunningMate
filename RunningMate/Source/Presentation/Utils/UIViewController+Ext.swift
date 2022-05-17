@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIViewController {
-    func showPopUpMessage(_ message: String) {
+    func alert(_ message: String) {
         let alert = UIAlertController()
         alert.addAction(UIAlertAction(title: message, style: .default))
         self.present(alert, animated: true)
