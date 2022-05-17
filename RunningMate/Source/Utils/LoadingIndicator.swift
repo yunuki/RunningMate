@@ -12,7 +12,7 @@ class LoadingIndicator {
     static func handleLoading(_ isLoading: Bool) {
         DispatchQueue.main.async {
             if isLoading {
-                guard let window = UIApplication.shared.windows.last else {return}
+                guard let window = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first else {return}
                 
                 let loadingIndicatorView: UIActivityIndicatorView
                 if let existedView = window.subviews.first(where: {$0 is UIActivityIndicatorView}) as? UIActivityIndicatorView {
@@ -25,7 +25,7 @@ class LoadingIndicator {
                 }
                 loadingIndicatorView.startAnimating()
             } else {
-                guard let window = UIApplication.shared.windows.last else { return }
+                guard let window = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first else { return }
                 window.subviews
                     .filter{$0 is UIActivityIndicatorView}
                     .forEach{$0.removeFromSuperview()}

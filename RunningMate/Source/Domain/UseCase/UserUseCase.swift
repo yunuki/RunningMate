@@ -11,7 +11,7 @@ import RxSwift
 protocol UserUseCase {
     func fetchUser(userId: Int) -> Observable<User>
     func fetchUsers() -> Observable<[User]>
-    func createUser(request: UserRequestModel) -> Observable<User>
+    func updateUser(userId: Int, nickname: String) -> Observable<User>
 }
 
 final class DefaultUserUseCase: UserUseCase {
@@ -30,7 +30,7 @@ final class DefaultUserUseCase: UserUseCase {
         return userRepository.users()
     }
     
-    func createUser(request: UserRequestModel) -> Observable<User> {
-        return userRepository.create(request: request)
+    func updateUser(userId: Int, nickname: String) -> Observable<User> {
+        return userRepository.update(userId: userId, nickname: nickname)
     }
 }

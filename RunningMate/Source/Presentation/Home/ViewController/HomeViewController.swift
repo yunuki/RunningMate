@@ -19,7 +19,7 @@ class HomeViewController: BaseViewController {
         l.font = .nanumRound(size: 16)
         l.textColor = Asset.Color.Black
         l.textAlignment = .left
-        l.text = "\(UserManager.shared.getUserSnapShot()?.name ?? "")님, 반가워요!"
+        l.text = "\(UserManager.shared.getUserSnapShot()?.nickname ?? "")님, 반가워요!"
         return l
     }()
     

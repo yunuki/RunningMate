@@ -16,17 +16,17 @@ final class UserNetwork {
     }
     
     func getUser(userId: Int) -> Observable<User> {
-        return network.getItem("user", itemId: "\(userId)")
+        return network.getItem("account", itemId: "\(userId)")
     }
     
     func getUsers() -> Observable<[User]> {
-        return network.getItems("users")
+        return network.getItems("account/list")
     }
     
-    func postUser(request: UserRequestModel) -> Observable<User> {
-        return network.postItem("user", parameters: [
-            "token": request.token,
-            "name": request.name
+    func putUser(userId: Int, nickname: String) -> Observable<User> {
+        return network.updateItem("account", itemId: "\(userId)", parameters: [
+            "nickname": nickname
         ])
     }
+    
 }

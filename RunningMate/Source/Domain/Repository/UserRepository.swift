@@ -11,7 +11,7 @@ import RxSwift
 protocol UserRepository {
     func user(userId: Int) -> Observable<User>
     func users() -> Observable<[User]>
-    func create(request: UserRequestModel) -> Observable<User>
+    func update(userId: Int, nickname: String) -> Observable<User>
 }
 
 final class DefaultUserRepository: UserRepository {
@@ -30,7 +30,7 @@ final class DefaultUserRepository: UserRepository {
         return userNetwork.getUsers()
     }
     
-    func create(request: UserRequestModel) -> Observable<User> {
-        return userNetwork.postUser(request: request)
+    func update(userId: Int, nickname: String) -> Observable<User> {
+        return userNetwork.putUser(userId: userId, nickname: nickname)
     }
 }

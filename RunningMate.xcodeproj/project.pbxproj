@@ -24,6 +24,8 @@
 		148007E9283358EB0075B30B /* UDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148007E8283358EB0075B30B /* UDKey.swift */; };
 		148007EB28335BAD0075B30B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148007EA28335BAD0075B30B /* ActivityIndicator.swift */; };
 		148007ED283387780075B30B /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148007EC283387780075B30B /* LoadingIndicator.swift */; };
+		148007EF28338D040075B30B /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148007EE28338D040075B30B /* UIColor+Ext.swift */; };
+		148007F12833A2610075B30B /* SignUpNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148007F02833A2610075B30B /* SignUpNavigator.swift */; };
 		148C4BFE282E6428004ED112 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4BFD282E6428004ED112 /* UIViewController+Ext.swift */; };
 		148C4C01282E6593004ED112 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C00282E6593004ED112 /* RecordViewController.swift */; };
 		148C4C25282F9457004ED112 /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C4C24282F9457004ED112 /* Font+Ext.swift */; };
@@ -44,7 +46,6 @@
 		14ACD353282BB16C004D724A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD352282BB16C004D724A /* SignInViewController.swift */; };
 		14ACD357282BB855004D724A /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD356282BB855004D724A /* UserRepository.swift */; };
 		14ACD359282BBA4A004D724A /* UserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD358282BBA4A004D724A /* UserUseCase.swift */; };
-		14ACD361282BC149004D724A /* UserRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD360282BC149004D724A /* UserRequestModel.swift */; };
 		14ACD363282BC372004D724A /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD362282BC372004D724A /* SignInViewModel.swift */; };
 		14ACD365282BC61F004D724A /* SignInNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD364282BC61F004D724A /* SignInNavigator.swift */; };
 		14ACD367282BC6C8004D724A /* AuthNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACD366282BC6C8004D724A /* AuthNetwork.swift */; };
@@ -79,6 +80,8 @@
 		148007E8283358EB0075B30B /* UDKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDKey.swift; sourceTree = "<group>"; };
 		148007EA28335BAD0075B30B /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		148007EC283387780075B30B /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		148007EE28338D040075B30B /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		148007F02833A2610075B30B /* SignUpNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNavigator.swift; sourceTree = "<group>"; };
 		148C4BFD282E6428004ED112 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		148C4C00282E6593004ED112 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		148C4C24282F9457004ED112 /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
@@ -100,7 +103,6 @@
 		14ACD352282BB16C004D724A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		14ACD356282BB855004D724A /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		14ACD358282BBA4A004D724A /* UserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUseCase.swift; sourceTree = "<group>"; };
-		14ACD360282BC149004D724A /* UserRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequestModel.swift; sourceTree = "<group>"; };
 		14ACD362282BC372004D724A /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		14ACD364282BC61F004D724A /* SignInNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInNavigator.swift; sourceTree = "<group>"; };
 		14ACD366282BC6C8004D724A /* AuthNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetwork.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				148C4C30282F969C004ED112 /* UIView+Ext.swift */,
 				148C4C3E282FA58E004ED112 /* Date+Ext.swift */,
 				148C4C532831533B004ED112 /* CGFloat+Ext.swift */,
+				148007EE28338D040075B30B /* UIColor+Ext.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			children = (
 				148C4C5628315F3D004ED112 /* SignUpViewController.swift */,
 				148C4C5828315F61004ED112 /* SignUpViewModel.swift */,
+				148007F02833A2610075B30B /* SignUpNavigator.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -303,7 +307,6 @@
 		14ACD35F282BC13A004D724A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				14ACD360282BC149004D724A /* UserRequestModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 				14ACD367282BC6C8004D724A /* AuthNetwork.swift in Sources */,
 				148007E9283358EB0075B30B /* UDKey.swift in Sources */,
 				14ACD353282BB16C004D724A /* SignInViewController.swift in Sources */,
+				148007F12833A2610075B30B /* SignUpNavigator.swift in Sources */,
 				148C4C48282FAFDC004ED112 /* RecordNavigator.swift in Sources */,
 				148C4C3F282FA58E004ED112 /* Date+Ext.swift in Sources */,
 				1470272028242CC800059328 /* HomeViewModel.swift in Sources */,
@@ -595,12 +599,12 @@
 				148C4C41282FA6CF004ED112 /* HomeNavigator.swift in Sources */,
 				1470271B28242C0100059328 /* BasePanelViewController.swift in Sources */,
 				14ACD363282BC372004D724A /* SignInViewModel.swift in Sources */,
-				14ACD361282BC149004D724A /* UserRequestModel.swift in Sources */,
 				14CD7DAE282414C200BB83C9 /* SceneDelegate.swift in Sources */,
 				14CD7DC9282415CD00BB83C9 /* BaseViewController.swift in Sources */,
 				1470272828242FD500059328 /* UserNetwork.swift in Sources */,
 				14ACD365282BC61F004D724A /* SignInNavigator.swift in Sources */,
 				14ACD36D282BC843004D724A /* AuthUseCase.swift in Sources */,
+				148007EF28338D040075B30B /* UIColor+Ext.swift in Sources */,
 				14C9514F2825106B00E22336 /* RecordManager.swift in Sources */,
 				148C4C2F282F9671004ED112 /* UIButton+Ext.swift in Sources */,
 				148007ED283387780075B30B /* LoadingIndicator.swift in Sources */,

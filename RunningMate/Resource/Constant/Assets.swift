@@ -18,6 +18,7 @@ internal enum Asset {
     internal enum Color {
         internal static let RunningMate = UIColor(named: "RunningMate")!
         internal static let Black = UIColor(named: "Black")!
+        internal static let Red = UIColor(named: "Red")!
     }
 }
 
