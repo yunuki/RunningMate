@@ -28,7 +28,6 @@ class HomeViewModel: ViewModelType {
     func transform(input: Input) -> Output {
         
         let pushRecordVC = input.startRunningBtnTapped
-            .do(onNext: {_ in RecordManager.shared.start()})
             .do(onNext: navigator.pushRecordVC)
         
         return Output(

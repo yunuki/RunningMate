@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14616C3E283D14E500158D13 /* RecordStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C3D283D14E500158D13 /* RecordStartViewController.swift */; };
+		14616C40283D412B00158D13 /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C3F283D412B00158D13 /* UIStackView+Ext.swift */; };
+		14616C42283E945D00158D13 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14616C41283E945D00158D13 /* HealthKit.framework */; };
 		147027062824180900059328 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147027052824180900059328 /* HomeViewController.swift */; };
 		147027092824182900059328 /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147027082824182900059328 /* UINavigationController+Ext.swift */; };
 		1470270D282419EF00059328 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1470270C282419EF00059328 /* Image.xcassets */; };
@@ -63,6 +66,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14616C3D283D14E500158D13 /* RecordStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordStartViewController.swift; sourceTree = "<group>"; };
+		14616C3F283D412B00158D13 /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
+		14616C41283E945D00158D13 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		147027052824180900059328 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		147027082824182900059328 /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
 		1470270C282419EF00059328 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				767456824D416ECFC6F93C1E /* Pods_RunningMate.framework in Frameworks */,
+				14616C42283E945D00158D13 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				147027052824180900059328 /* HomeViewController.swift */,
+				14616C3D283D14E500158D13 /* RecordStartViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -165,6 +173,7 @@
 				148C4C3E282FA58E004ED112 /* Date+Ext.swift */,
 				148C4C532831533B004ED112 /* CGFloat+Ext.swift */,
 				148007EE28338D040075B30B /* UIColor+Ext.swift */,
+				14616C3F283D412B00158D13 /* UIStackView+Ext.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -442,6 +451,7 @@
 		EBC811AD6C28CBCAAEAF77C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14616C41283E945D00158D13 /* HealthKit.framework */,
 				4CD35F9053B9A658D0E02DC6 /* Pods_RunningMate.framework */,
 			);
 			name = Frameworks;
@@ -574,6 +584,7 @@
 				148007EB28335BAD0075B30B /* ActivityIndicator.swift in Sources */,
 				148C4BFE282E6428004ED112 /* UIViewController+Ext.swift in Sources */,
 				14ACD367282BC6C8004D724A /* AuthNetwork.swift in Sources */,
+				14616C40283D412B00158D13 /* UIStackView+Ext.swift in Sources */,
 				148007E9283358EB0075B30B /* UDKey.swift in Sources */,
 				14ACD353282BB16C004D724A /* SignInViewController.swift in Sources */,
 				148007F12833A2610075B30B /* SignUpNavigator.swift in Sources */,
@@ -591,6 +602,7 @@
 				147027092824182900059328 /* UINavigationController+Ext.swift in Sources */,
 				1470271128241B6B00059328 /* Assets.swift in Sources */,
 				148C4C52283151D8004ED112 /* UserManager.swift in Sources */,
+				14616C3E283D14E500158D13 /* RecordStartViewController.swift in Sources */,
 				14C9514C2825098700E22336 /* AppleSignInManager.swift in Sources */,
 				14ACD369282BC709004D724A /* Auth.swift in Sources */,
 				1470272A2824302900059328 /* User.swift in Sources */,
@@ -757,6 +769,7 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RunningMate/Resource/Support/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "운동 기록을 하기 위해 기기에 접근하는 것을 허용하시겠습니까?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -789,6 +802,7 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RunningMate/Resource/Support/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "운동 기록을 하기 위해 기기에 접근하는 것을 허용하시겠습니까?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

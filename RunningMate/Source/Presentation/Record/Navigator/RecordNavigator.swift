@@ -8,13 +8,16 @@
 import UIKit
 
 class RecordNavigator {
-    weak var presentingViewController: UIViewController?
+    weak var navigationController: UINavigationController?
     
-    init(presentingViewController: UIViewController?) {
-        self.presentingViewController = presentingViewController
+    init(navigationController: UINavigationController?) {
+        self.navigationController = navigationController
     }
     
     func dismiss() {
-        self.presentingViewController?.presentedViewController?.dismiss(animated: true)
+        self.navigationController?.optionAlert("러닝을 중지하시겠습니까?", handler: { [weak self] _ in
+            RecordManager.shared.end()
+            self?.navigationController?.dismiss(animated: true)
+        })
     }
 }

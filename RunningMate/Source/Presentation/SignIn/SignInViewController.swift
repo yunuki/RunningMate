@@ -13,6 +13,17 @@ import RxCocoa
 
 class SignInViewController: BaseViewController {
     
+    let logoImgView = UIImageView(image: Asset.Image.imgLogoSignIn)
+    
+    let mentLabel: UILabel = {
+        let l = UILabel()
+        l.font = .nanumRound(size: 16)
+        l.textColor = .white
+        l.numberOfLines = 2
+        l.text = "당신과 함께 달릴 러닝 메이트,\n지금 바로 만나보세요"
+        return l
+    }()
+    
     lazy var appleSignInBtn: ASAuthorizationAppleIDButton = {
         let btn = ASAuthorizationAppleIDButton()
         btn.addTarget(self, action: #selector(appleSignInBtn(_:)), for: .touchUpInside)
@@ -41,6 +52,7 @@ class SignInViewController: BaseViewController {
     init(viewModel: SignInViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        self.view.backgroundColor = Asset.Color.RunningMate
         bindViewModel()
     }
     
@@ -53,23 +65,41 @@ class SignInViewController: BaseViewController {
     }
     
     override func setConstraints() {
-        self.view.addSubview(appleSignInBtn)
+        let container = UIView()
+        container.addSubview(logoImgView)
+        logoImgView.snp.makeConstraints { make in
+            make.top.left.equalToSuperview()
+        }
+        
+        container.addSubview(mentLabel)
+        mentLabel.snp.makeConstraints { make in
+            make.top.equalTo(logoImgView.snp.bottom).offset(156)
+            make.left.equalToSuperview()
+        }
+        
+        container.addSubview(appleSignInBtn)
         appleSignInBtn.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().offset(-100)
-            make.width.equalTo(300)
-            make.height.equalTo(80)
+            make.top.equalTo(mentLabel.snp.bottom).offset(56)
+            make.left.bottom.right.equalToSuperview()
+            make.height.equalTo(54)
+        }
+        
+        self.view.addSubview(container)
+        container.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.left.equalToSuperview().offset(16)
+            make.right.equalToSuperview().offset(-16)
         }
     }
     
     func bindViewModel() {
         
-        let viewDidLoad = rx.sentMessage(#selector(viewDidLoad))
+        let viewWillAppear = rx.sentMessage(#selector(viewWillAppear(_:)))
             .map{_ in}
             .asDriver(onErrorRecover: {_ in Driver.empty()})
         
         let output = self.viewModel.transform(input: SignInViewModel.Input(
-            viewDidLoad: viewDidLoad,
+            viewWillAppear: viewWillAppear,
             authCodeTrigger: authCodeSubject.asDriver(onErrorRecover: {_ in Driver.empty()})
         ))
         

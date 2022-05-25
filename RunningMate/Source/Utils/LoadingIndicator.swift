@@ -20,7 +20,7 @@ class LoadingIndicator {
                 } else {
                     loadingIndicatorView = UIActivityIndicatorView(style: .large)
                     loadingIndicatorView.frame = window.frame
-                    loadingIndicatorView.color = Asset.Color.RunningMate
+                    loadingIndicatorView.color = UIColor.setGray(153)
                     window.addSubview(loadingIndicatorView)
                 }
                 loadingIndicatorView.startAnimating()

@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>운동 기록을 하기 위해 기기에 접근하는 것을 허용하시겠습니까?</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>access health</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>access health</string>
+	<key>NSMotionUsageDescription</key>
+	<string>운동 기록을 하기 위해 기기에 접근하는 것을 허용하시겠습니까?</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -14,8 +22,6 @@
 		<string>NanumSquareRoundOTFL.otf</string>
 		<string>NanumSquareRoundOTFR.otf</string>
 	</array>
-	<key>NSMotionUsageDescription</key>
-	<string>운동 기록을 하기 위해 기기에 접근하는 것을 허용하시겠습니까?</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -33,5 +39,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDarkContent</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

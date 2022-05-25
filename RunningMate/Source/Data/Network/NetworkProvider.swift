@@ -12,7 +12,7 @@ final class NetworkProvider {
     private let apiEndPoint: String
     
     init() {
-        self.apiEndPoint = "http://127.0.0.1:8000"
+        self.apiEndPoint = "http://3.39.155.242:8000"
     }
     
     func makeAuthNetwork() -> AuthNetwork {

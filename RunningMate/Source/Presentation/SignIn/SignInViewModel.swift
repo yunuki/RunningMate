@@ -20,7 +20,7 @@ class SignInViewModel: ViewModelType {
     }
     
     struct Input {
-        let viewDidLoad: Driver<Void>
+        let viewWillAppear: Driver<Void>
         let authCodeTrigger: Driver<String>
     }
     
@@ -34,7 +34,7 @@ class SignInViewModel: ViewModelType {
         let activityIndicator = ActivityIndicator()
         
         let doAuth = Driver.merge(
-            input.viewDidLoad
+            input.viewWillAppear
                 .compactMap{_ in UserDefaults.standard.string(forKey: UDKey.token)}
                 .flatMapLatest { [weak self] token -> Driver<Auth> in
                     guard let `self` = self else {return Driver.empty()}

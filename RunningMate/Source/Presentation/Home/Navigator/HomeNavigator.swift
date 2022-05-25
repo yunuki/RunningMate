@@ -15,8 +15,7 @@ class HomeNavigator {
     }
     
     func pushRecordVC() {
-        let recordVC = RecordViewController(viewModel: RecordViewModel(navigator: RecordNavigator(presentingViewController: self.navigationController?.topViewController)))
-        recordVC.modalPresentationStyle = .fullScreen
-        self.navigationController?.topViewController?.present(recordVC, animated: true)
+        let vc = RecordStartViewController()
+        self.navigationController?.topViewController?.present(vc, animated: true)
     }
 }
