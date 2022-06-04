@@ -93,7 +93,8 @@ class RecordStartViewController: BasePanelViewController {
         nav.modalPresentationStyle = .fullScreen
         let vc = RecordViewController(viewModel: RecordViewModel(dayOrNight: dayOrNight, insideOrOutside: insideOrOutside, navigator: RecordNavigator(navigationController: nav)))
         nav.pushViewController(vc, animated: false)
-        self.present(nav, animated: true)
+        self.dismiss(animated: true)
+        self.presentingViewController?.present(nav, animated: true)
     }
     
     private let dayOrNightItems: [DayOrNight] = [.day, .night]

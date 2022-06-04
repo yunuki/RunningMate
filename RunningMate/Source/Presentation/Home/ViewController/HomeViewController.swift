@@ -33,6 +33,10 @@ class HomeViewController: BaseViewController {
         return l
     }()
     
+    lazy var characterImgView: UIImageView = {
+        return UIImageView(image: Asset.Image.imgCharacter1)
+    }()
+    
     let characterBackgroundView: UIView = {
         let v = UIView()
         v.backgroundColor = Asset.Color.RunningMate.withAlphaComponent(0.2)
@@ -73,9 +77,9 @@ class HomeViewController: BaseViewController {
     
     override func setConstraints() {
         
-        self.navigationController?.navigationBar.addSubview(logoImgView)
+        self.view.addSubview(logoImgView)
         logoImgView.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
+            make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(-6)
             make.left.equalToSuperview().offset(16)
         }
         
@@ -86,6 +90,11 @@ class HomeViewController: BaseViewController {
             make.width.height.equalTo(CGFloat(260).adjusted)
         }
         characterBackgroundView.roundCorner(CGFloat(260).adjusted/2)
+        
+        self.view.addSubview(characterImgView)
+        characterImgView.snp.makeConstraints { make in
+            make.center.equalTo(characterBackgroundView)
+        }
         
         self.view.addSubview(greetingLabelSmall)
         greetingLabelSmall.snp.makeConstraints { make in
@@ -121,15 +130,11 @@ class HomeViewController: BaseViewController {
     private func initNavigationBar() {
         self.navigationController?.initNavigationBar(
             navigationItem: navigationItem,
-            rightButtonImages: [Asset.Image.icnMyPage, Asset.Image.icnRank],
-            rightActions: [#selector(pushProfileVC(_:)), #selector(pushRankingVC(_:))])
+            rightButtonImages: [Asset.Image.icnMyPage],
+            rightActions: [#selector(pushMyPageVC(_:))])
     }
-    
-    @objc func pushRankingVC(_ sender: Any) {
-        
-    }
-    
-    @objc func pushProfileVC(_ sender: Any) {
-        
+    @objc func pushMyPageVC(_ sender: Any) {
+        let vc = MyPageViewController(viewModel: MyPageViewModel(navigator: MyPageNavigator(navigationController: self.navigationController)))
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

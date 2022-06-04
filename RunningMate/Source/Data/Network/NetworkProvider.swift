@@ -13,6 +13,7 @@ final class NetworkProvider {
     
     init() {
         self.apiEndPoint = "http://3.39.155.242:8000"
+//        self.apiEndPoint = "http://127.0.0.1:8000"
     }
     
     func makeAuthNetwork() -> AuthNetwork {
@@ -25,4 +26,13 @@ final class NetworkProvider {
         return UserNetwork(network: network)
     }
     
+    func makeRecordNetwork() -> RecordNetwork {
+        let network = Network<Record>(apiEndPoint)
+        return RecordNetwork(network: network)
+    }
+    
+    func makeRecordStatisticsNetwork() -> RecordStatisticsNetwork {
+        let network = Network<RecordStatistics>(apiEndPoint)
+        return RecordStatisticsNetwork(network: network)
+    }
 }

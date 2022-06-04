@@ -26,13 +26,15 @@ extension Date {
     }
     
     static func generateDate(rawDate:String) -> String {
-        guard rawDate != "" else {return ""}
+        guard rawDate != "",
+              let sub = rawDate.split(separator: ".").first else {return ""}
+        let modified = String(sub)
         let df = DateFormatter()
-        df.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        let inputDate = df.date(from: rawDate) ?? Date()
+        df.dateFormat = "yyyy-MM-d'T'HH:mm:ss"
+        let inputDate = df.date(from: modified) ?? Date()
         let interval: DateInterval = Date() - inputDate
         if let month = interval.month, month > 0 {
-            df.dateFormat = "yyyy.MM.dd"
+            df.dateFormat = "yyyy.MM.dd HH:mm"
             return df.string(from: inputDate)
         } else if let day = interval.day, day > 0 {
             return "\(day)일 전"

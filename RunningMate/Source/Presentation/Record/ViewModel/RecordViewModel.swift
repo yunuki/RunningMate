@@ -36,6 +36,7 @@ class RecordViewModel: ViewModelType {
     struct Input {
         let viewDidLoad: Driver<Void>
         let pauseOrResumeBtnTapped: Driver<Void>
+        let mapViewTapped: Driver<Void>
         let endRunningBtnTapped: Driver<Void>
     }
     
@@ -47,6 +48,7 @@ class RecordViewModel: ViewModelType {
         let pace: Driver<Double>
         let isPaused: Driver<Bool>
         let pauseOrResumeRunning: Driver<Bool>
+        let pushFullScreenMapVC: Driver<Void>
         let endRunning: Driver<Void>
     }
     
@@ -65,6 +67,9 @@ class RecordViewModel: ViewModelType {
                     RecordManager.shared.pause()
                 }
             })
+                
+        let pushFullScreenMapVC = input.mapViewTapped
+            .do(onNext: navigator.pushFullScreenMapVC)
         
         let endRunning = input.endRunningBtnTapped
             .do(onNext: navigator.dismiss)
@@ -77,6 +82,7 @@ class RecordViewModel: ViewModelType {
             pace: pace.asDriver(),
             isPaused: isPaused.asDriver(),
             pauseOrResumeRunning: pauseOrResumeRunning,
+            pushFullScreenMapVC: pushFullScreenMapVC,
             endRunning: endRunning
         )
     }

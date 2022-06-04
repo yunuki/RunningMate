@@ -75,8 +75,7 @@ final class RecordManager: CMPedometer {
         guard let data = data else {return}
         
         let distance = (data.distance?.doubleValue ?? 0.0) / 1000 //km
-        
-        let pace = (data.currentPace?.doubleValue ?? 0.0) * 1000 / 60 //minutes per kilometer
+        let pace = (data.averageActivePace?.doubleValue ?? 0.0) * 1000 / 60 //minutes per kilometer
         
         DispatchQueue.main.async {
             self.delegate?.didDistanceChanged(distance: distance)

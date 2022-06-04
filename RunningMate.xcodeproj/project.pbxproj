@@ -10,6 +10,34 @@
 		14616C3E283D14E500158D13 /* RecordStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C3D283D14E500158D13 /* RecordStartViewController.swift */; };
 		14616C40283D412B00158D13 /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C3F283D412B00158D13 /* UIStackView+Ext.swift */; };
 		14616C42283E945D00158D13 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14616C41283E945D00158D13 /* HealthKit.framework */; };
+		14616C46284218F000158D13 /* BasePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C45284218F000158D13 /* BasePopupViewController.swift */; };
+		14616C4828421A9400158D13 /* RecordFinishPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C4728421A9400158D13 /* RecordFinishPopupViewController.swift */; };
+		14616C4B28421E1D00158D13 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C4A28421E1D00158D13 /* MyPageViewController.swift */; };
+		14616C4D28421E2A00158D13 /* MyPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C4C28421E2A00158D13 /* MyPageViewModel.swift */; };
+		14616C4F28421E3C00158D13 /* MyPageNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C4E28421E3C00158D13 /* MyPageNavigator.swift */; };
+		14616C542842665400158D13 /* MyPage+RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C532842665400158D13 /* MyPage+RecordViewController.swift */; };
+		14616C562842667100158D13 /* MyPage+StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C552842667100158D13 /* MyPage+StatisticsViewController.swift */; };
+		14616C5828426DC200158D13 /* OuterScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C5728426DC200158D13 /* OuterScrollView.swift */; };
+		14616C5C2842898700158D13 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C5B2842898700158D13 /* Record.swift */; };
+		14616C5E28428AE200158D13 /* RecordNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C5D28428AE200158D13 /* RecordNetwork.swift */; };
+		14616C6028428BB800158D13 /* RecordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C5F28428BB800158D13 /* RecordRepository.swift */; };
+		14616C6228428CCA00158D13 /* RecordUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C6128428CCA00158D13 /* RecordUseCase.swift */; };
+		14616C6428428D5200158D13 /* MyPage+RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C6328428D5200158D13 /* MyPage+RecordViewModel.swift */; };
+		14616C6728428F3B00158D13 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C6628428F3B00158D13 /* RecordTableViewCell.swift */; };
+		14616C692843C22E00158D13 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C682843C22E00158D13 /* UITableView+Ext.swift */; };
+		14616C6B2844663C00158D13 /* NSMutableAttributedString+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C6A2844663C00158D13 /* NSMutableAttributedString+Ext.swift */; };
+		14616C6F284605D500158D13 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C6E284605D500158D13 /* Group.swift */; };
+		14616C7128460CDF00158D13 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C7028460CDF00158D13 /* PaddingLabel.swift */; };
+		14616C7328462F2500158D13 /* RecordStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C7228462F2500158D13 /* RecordStatistics.swift */; };
+		14616C79284631E600158D13 /* RecordStatisticsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C78284631E600158D13 /* RecordStatisticsNetwork.swift */; };
+		14616C7B2846343E00158D13 /* MyPage+StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C7A2846343E00158D13 /* MyPage+StatisticsViewModel.swift */; };
+		14616C7E28463B3900158D13 /* TotalStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C7D28463B3900158D13 /* TotalStatisticsView.swift */; };
+		14616C802846895600158D13 /* YearMonthPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C7F2846895500158D13 /* YearMonthPicker.swift */; };
+		14616C82284722F900158D13 /* CompareBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C81284722F900158D13 /* CompareBarView.swift */; };
+		14616C8428475D1400158D13 /* SelectedStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C8328475D1400158D13 /* SelectedStatisticsView.swift */; };
+		14616C862848D92500158D13 /* YearMonthSelectPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C852848D92500158D13 /* YearMonthSelectPanelViewController.swift */; };
+		14616C882848DA6400158D13 /* MyPage+StatisticsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C872848DA6400158D13 /* MyPage+StatisticsNavigator.swift */; };
+		14616C8A2848DD7E00158D13 /* FullScreenMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14616C892848DD7E00158D13 /* FullScreenMapViewController.swift */; };
 		147027062824180900059328 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147027052824180900059328 /* HomeViewController.swift */; };
 		147027092824182900059328 /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147027082824182900059328 /* UINavigationController+Ext.swift */; };
 		1470270D282419EF00059328 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1470270C282419EF00059328 /* Image.xcassets */; };
@@ -69,6 +97,34 @@
 		14616C3D283D14E500158D13 /* RecordStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordStartViewController.swift; sourceTree = "<group>"; };
 		14616C3F283D412B00158D13 /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
 		14616C41283E945D00158D13 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		14616C45284218F000158D13 /* BasePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePopupViewController.swift; sourceTree = "<group>"; };
+		14616C4728421A9400158D13 /* RecordFinishPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordFinishPopupViewController.swift; sourceTree = "<group>"; };
+		14616C4A28421E1D00158D13 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		14616C4C28421E2A00158D13 /* MyPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewModel.swift; sourceTree = "<group>"; };
+		14616C4E28421E3C00158D13 /* MyPageNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageNavigator.swift; sourceTree = "<group>"; };
+		14616C532842665400158D13 /* MyPage+RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyPage+RecordViewController.swift"; sourceTree = "<group>"; };
+		14616C552842667100158D13 /* MyPage+StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyPage+StatisticsViewController.swift"; sourceTree = "<group>"; };
+		14616C5728426DC200158D13 /* OuterScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuterScrollView.swift; sourceTree = "<group>"; };
+		14616C5B2842898700158D13 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		14616C5D28428AE200158D13 /* RecordNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordNetwork.swift; sourceTree = "<group>"; };
+		14616C5F28428BB800158D13 /* RecordRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRepository.swift; sourceTree = "<group>"; };
+		14616C6128428CCA00158D13 /* RecordUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordUseCase.swift; sourceTree = "<group>"; };
+		14616C6328428D5200158D13 /* MyPage+RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyPage+RecordViewModel.swift"; sourceTree = "<group>"; };
+		14616C6628428F3B00158D13 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
+		14616C682843C22E00158D13 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		14616C6A2844663C00158D13 /* NSMutableAttributedString+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Ext.swift"; sourceTree = "<group>"; };
+		14616C6E284605D500158D13 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		14616C7028460CDF00158D13 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		14616C7228462F2500158D13 /* RecordStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordStatistics.swift; sourceTree = "<group>"; };
+		14616C78284631E600158D13 /* RecordStatisticsNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordStatisticsNetwork.swift; sourceTree = "<group>"; };
+		14616C7A2846343E00158D13 /* MyPage+StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyPage+StatisticsViewModel.swift"; sourceTree = "<group>"; };
+		14616C7D28463B3900158D13 /* TotalStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalStatisticsView.swift; sourceTree = "<group>"; };
+		14616C7F2846895500158D13 /* YearMonthPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearMonthPicker.swift; sourceTree = "<group>"; };
+		14616C81284722F900158D13 /* CompareBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareBarView.swift; sourceTree = "<group>"; };
+		14616C8328475D1400158D13 /* SelectedStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStatisticsView.swift; sourceTree = "<group>"; };
+		14616C852848D92500158D13 /* YearMonthSelectPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearMonthSelectPanelViewController.swift; sourceTree = "<group>"; };
+		14616C872848DA6400158D13 /* MyPage+StatisticsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyPage+StatisticsNavigator.swift"; sourceTree = "<group>"; };
+		14616C892848DD7E00158D13 /* FullScreenMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenMapViewController.swift; sourceTree = "<group>"; };
 		147027052824180900059328 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		147027082824182900059328 /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
 		1470270C282419EF00059328 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
@@ -142,6 +198,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14616C4928421E0B00158D13 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				14616C7C28463B2900158D13 /* View */,
+				14616C6528428F1900158D13 /* Cell */,
+				14616C502842661700158D13 /* ViewController */,
+				14616C512842661F00158D13 /* ViewModel */,
+				14616C522842662800158D13 /* Navigator */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		14616C502842661700158D13 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				14616C4A28421E1D00158D13 /* MyPageViewController.swift */,
+				14616C532842665400158D13 /* MyPage+RecordViewController.swift */,
+				14616C552842667100158D13 /* MyPage+StatisticsViewController.swift */,
+				14616C852848D92500158D13 /* YearMonthSelectPanelViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		14616C512842661F00158D13 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				14616C4C28421E2A00158D13 /* MyPageViewModel.swift */,
+				14616C6328428D5200158D13 /* MyPage+RecordViewModel.swift */,
+				14616C7A2846343E00158D13 /* MyPage+StatisticsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		14616C522842662800158D13 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				14616C4E28421E3C00158D13 /* MyPageNavigator.swift */,
+				14616C872848DA6400158D13 /* MyPage+StatisticsNavigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		14616C6528428F1900158D13 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				14616C6628428F3B00158D13 /* RecordTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		14616C7C28463B2900158D13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14616C7D28463B3900158D13 /* TotalStatisticsView.swift */,
+				14616C8328475D1400158D13 /* SelectedStatisticsView.swift */,
+				14616C81284722F900158D13 /* CompareBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		14702703282417F400059328 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +290,11 @@
 				148C4C532831533B004ED112 /* CGFloat+Ext.swift */,
 				148007EE28338D040075B30B /* UIColor+Ext.swift */,
 				14616C3F283D412B00158D13 /* UIStackView+Ext.swift */,
+				14616C5728426DC200158D13 /* OuterScrollView.swift */,
+				14616C682843C22E00158D13 /* UITableView+Ext.swift */,
+				14616C6A2844663C00158D13 /* NSMutableAttributedString+Ext.swift */,
+				14616C7028460CDF00158D13 /* PaddingLabel.swift */,
+				14616C7F2846895500158D13 /* YearMonthPicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -235,6 +356,8 @@
 			children = (
 				14ACD366282BC6C8004D724A /* AuthNetwork.swift */,
 				1470272728242FD500059328 /* UserNetwork.swift */,
+				14616C5D28428AE200158D13 /* RecordNetwork.swift */,
+				14616C78284631E600158D13 /* RecordStatisticsNetwork.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -253,6 +376,8 @@
 			isa = PBXGroup;
 			children = (
 				148C4C00282E6593004ED112 /* RecordViewController.swift */,
+				14616C4728421A9400158D13 /* RecordFinishPopupViewController.swift */,
+				14616C892848DD7E00158D13 /* FullScreenMapViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -368,6 +493,7 @@
 				148C4C5528315F2A004ED112 /* SignUp */,
 				14702703282417F400059328 /* Home */,
 				148C4BFF282E6585004ED112 /* Record */,
+				14616C4928421E0B00158D13 /* MyPage */,
 				147027072824181400059328 /* Utils */,
 			);
 			path = Presentation;
@@ -407,6 +533,9 @@
 			children = (
 				14ACD368282BC709004D724A /* Auth.swift */,
 				147027292824302900059328 /* User.swift */,
+				14616C5B2842898700158D13 /* Record.swift */,
+				14616C7228462F2500158D13 /* RecordStatistics.swift */,
+				14616C6E284605D500158D13 /* Group.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -416,6 +545,7 @@
 			children = (
 				14ACD36A282BC7E1004D724A /* AuthRepository.swift */,
 				14ACD356282BB855004D724A /* UserRepository.swift */,
+				14616C5F28428BB800158D13 /* RecordRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -425,6 +555,7 @@
 			children = (
 				14ACD36C282BC843004D724A /* AuthUseCase.swift */,
 				14ACD358282BBA4A004D724A /* UserUseCase.swift */,
+				14616C6128428CCA00158D13 /* RecordUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -435,6 +566,7 @@
 				1470271C28242C8500059328 /* ViewModelType.swift */,
 				14CD7DC8282415CD00BB83C9 /* BaseViewController.swift */,
 				1470271A28242C0100059328 /* BasePanelViewController.swift */,
+				14616C45284218F000158D13 /* BasePopupViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -577,43 +709,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14616C6F284605D500158D13 /* Group.swift in Sources */,
 				148C4C31282F969C004ED112 /* UIView+Ext.swift in Sources */,
 				1470271328241CA700059328 /* UIImage+Ext.swift in Sources */,
 				148C4C5928315F61004ED112 /* SignUpViewModel.swift in Sources */,
+				14616C7128460CDF00158D13 /* PaddingLabel.swift in Sources */,
 				1470272428242F5A00059328 /* NetworkProvider.swift in Sources */,
 				148007EB28335BAD0075B30B /* ActivityIndicator.swift in Sources */,
+				14616C5828426DC200158D13 /* OuterScrollView.swift in Sources */,
 				148C4BFE282E6428004ED112 /* UIViewController+Ext.swift in Sources */,
+				14616C5E28428AE200158D13 /* RecordNetwork.swift in Sources */,
+				14616C6428428D5200158D13 /* MyPage+RecordViewModel.swift in Sources */,
 				14ACD367282BC6C8004D724A /* AuthNetwork.swift in Sources */,
+				14616C802846895600158D13 /* YearMonthPicker.swift in Sources */,
 				14616C40283D412B00158D13 /* UIStackView+Ext.swift in Sources */,
 				148007E9283358EB0075B30B /* UDKey.swift in Sources */,
 				14ACD353282BB16C004D724A /* SignInViewController.swift in Sources */,
+				14616C82284722F900158D13 /* CompareBarView.swift in Sources */,
+				14616C862848D92500158D13 /* YearMonthSelectPanelViewController.swift in Sources */,
 				148007F12833A2610075B30B /* SignUpNavigator.swift in Sources */,
 				148C4C48282FAFDC004ED112 /* RecordNavigator.swift in Sources */,
 				148C4C3F282FA58E004ED112 /* Date+Ext.swift in Sources */,
+				14616C7328462F2500158D13 /* RecordStatistics.swift in Sources */,
+				14616C7B2846343E00158D13 /* MyPage+StatisticsViewModel.swift in Sources */,
+				14616C79284631E600158D13 /* RecordStatisticsNetwork.swift in Sources */,
+				14616C562842667100158D13 /* MyPage+StatisticsViewController.swift in Sources */,
 				1470272028242CC800059328 /* HomeViewModel.swift in Sources */,
 				148C4C45282FAF9E004ED112 /* RecordViewModel.swift in Sources */,
+				14616C5C2842898700158D13 /* Record.swift in Sources */,
+				14616C8A2848DD7E00158D13 /* FullScreenMapViewController.swift in Sources */,
 				1470272228242E3C00059328 /* Network.swift in Sources */,
+				14616C6028428BB800158D13 /* RecordRepository.swift in Sources */,
 				1470271D28242C8500059328 /* ViewModelType.swift in Sources */,
+				14616C692843C22E00158D13 /* UITableView+Ext.swift in Sources */,
+				14616C4D28421E2A00158D13 /* MyPageViewModel.swift in Sources */,
 				148C4C542831533B004ED112 /* CGFloat+Ext.swift in Sources */,
 				148C4C25282F9457004ED112 /* Font+Ext.swift in Sources */,
+				14616C4828421A9400158D13 /* RecordFinishPopupViewController.swift in Sources */,
 				14CD7DAC282414C200BB83C9 /* AppDelegate.swift in Sources */,
+				14616C4F28421E3C00158D13 /* MyPageNavigator.swift in Sources */,
 				148C4C01282E6593004ED112 /* RecordViewController.swift in Sources */,
 				14ACD359282BBA4A004D724A /* UserUseCase.swift in Sources */,
 				147027092824182900059328 /* UINavigationController+Ext.swift in Sources */,
+				14616C7E28463B3900158D13 /* TotalStatisticsView.swift in Sources */,
 				1470271128241B6B00059328 /* Assets.swift in Sources */,
 				148C4C52283151D8004ED112 /* UserManager.swift in Sources */,
 				14616C3E283D14E500158D13 /* RecordStartViewController.swift in Sources */,
 				14C9514C2825098700E22336 /* AppleSignInManager.swift in Sources */,
+				14616C882848DA6400158D13 /* MyPage+StatisticsNavigator.swift in Sources */,
 				14ACD369282BC709004D724A /* Auth.swift in Sources */,
 				1470272A2824302900059328 /* User.swift in Sources */,
+				14616C6728428F3B00158D13 /* RecordTableViewCell.swift in Sources */,
 				14ACD36B282BC7E1004D724A /* AuthRepository.swift in Sources */,
 				148C4C5728315F3D004ED112 /* SignUpViewController.swift in Sources */,
+				14616C8428475D1400158D13 /* SelectedStatisticsView.swift in Sources */,
 				148C4C41282FA6CF004ED112 /* HomeNavigator.swift in Sources */,
 				1470271B28242C0100059328 /* BasePanelViewController.swift in Sources */,
 				14ACD363282BC372004D724A /* SignInViewModel.swift in Sources */,
 				14CD7DAE282414C200BB83C9 /* SceneDelegate.swift in Sources */,
 				14CD7DC9282415CD00BB83C9 /* BaseViewController.swift in Sources */,
+				14616C4B28421E1D00158D13 /* MyPageViewController.swift in Sources */,
 				1470272828242FD500059328 /* UserNetwork.swift in Sources */,
+				14616C6228428CCA00158D13 /* RecordUseCase.swift in Sources */,
 				14ACD365282BC61F004D724A /* SignInNavigator.swift in Sources */,
 				14ACD36D282BC843004D724A /* AuthUseCase.swift in Sources */,
 				148007EF28338D040075B30B /* UIColor+Ext.swift in Sources */,
@@ -621,7 +778,10 @@
 				148C4C2F282F9671004ED112 /* UIButton+Ext.swift in Sources */,
 				148007ED283387780075B30B /* LoadingIndicator.swift in Sources */,
 				14702719282427B000059328 /* UINavigationItem+Ext.swift in Sources */,
+				14616C542842665400158D13 /* MyPage+RecordViewController.swift in Sources */,
+				14616C6B2844663C00158D13 /* NSMutableAttributedString+Ext.swift in Sources */,
 				14ACD357282BB855004D724A /* UserRepository.swift in Sources */,
+				14616C46284218F000158D13 /* BasePopupViewController.swift in Sources */,
 				147027062824180900059328 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

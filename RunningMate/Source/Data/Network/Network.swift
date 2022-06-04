@@ -19,10 +19,16 @@ final class Network<T: Decodable> {
         self.scheduler = ConcurrentDispatchQueueScheduler(qos: DispatchQoS(qosClass: DispatchQoS.QoSClass.background, relativePriority: 1))
     }
     
-    func getItems(_ path: String) -> Observable<[T]> {
+    func getItems(_ path: String, queryParams: [String : Any]? = nil) -> Observable<[T]> {
         let absolutePath = "\(endPoint)/\(path)"
+        
+        var components = URLComponents(string: absolutePath)
+        components?.queryItems = queryParams?.map { k, v in
+            return URLQueryItem(name: k, value: "\(v)")
+        }
+        
         return RxAlamofire
-            .data(.get, absolutePath)
+            .data(.get, components?.url ?? absolutePath)
             .debug()
             .observe(on: scheduler)
             .map({ data -> [T] in
@@ -30,10 +36,16 @@ final class Network<T: Decodable> {
             })
     }
 
-    func getItem(_ path: String, itemId: String) -> Observable<T> {
+    func getItem(_ path: String, itemId: String, queryParams: [String : Any]? = nil) -> Observable<T> {
         let absolutePath = "\(endPoint)/\(path)/\(itemId)"
+        
+        var components = URLComponents(string: absolutePath)
+        components?.queryItems = queryParams?.map { k, v in
+            return URLQueryItem(name: k, value: "\(v)")
+        }
+        
         return RxAlamofire
-            .data(.get, absolutePath)
+            .data(.get, components?.url ?? absolutePath)
             .debug()
             .observe(on: scheduler)
             .map({ data -> T in

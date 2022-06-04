@@ -18,6 +18,10 @@ class RecordViewController: BaseViewController {
         return v
     }()
     
+    lazy var characterImgView: UIImageView = {
+        return UIImageView(image: Asset.Image.imgCharacter1.resizeImage(to: CGSize(width: 240, height: 240)))
+    }()
+    
     let timeLabel: UILabel = {
         let l = UILabel()
         l.font = UIFont.nanumRound(size: 36, weight: .bold)
@@ -97,11 +101,13 @@ class RecordViewController: BaseViewController {
         return makeRecordLabel("00'00\"")
     }()
     
-    let mapView: MKMapView = {
+    lazy var mapView: MKMapView = {
         let mv = MKMapView()
         mv.userTrackingMode = .follow
+        mv.addGestureRecognizer(mapViewTapGesture)
         return mv
     }()
+    let mapViewTapGesture = UITapGestureRecognizer()
     
     let pauseOrResumeBtn: UIButton = {
         let btn = UIButton()
@@ -163,6 +169,11 @@ class RecordViewController: BaseViewController {
             make.width.height.equalTo(200)
         }
         characterBackground.roundCorner(100)
+        
+        self.view.addSubview(characterImgView)
+        characterImgView.snp.makeConstraints { make in
+            make.center.equalTo(characterBackground)
+        }
         
         self.view.addSubview(timeLabel)
         timeLabel.snp.makeConstraints { make in
@@ -229,6 +240,7 @@ class RecordViewController: BaseViewController {
         let output = self.viewModel.transform(input: RecordViewModel.Input(
             viewDidLoad: viewDidLoad,
             pauseOrResumeBtnTapped: pauseOrResumeBtn.rx.tap.asDriver(),
+            mapViewTapped: mapViewTapGesture.rx.event.map{_ in}.asDriver(onErrorRecover: {_ in Driver.empty()}),
             endRunningBtnTapped: endRunningBtn.rx.tap.asDriver()
         ))
         
@@ -277,6 +289,10 @@ class RecordViewController: BaseViewController {
             .disposed(by: disposeBag)
         
         output.pauseOrResumeRunning
+            .drive()
+            .disposed(by: disposeBag)
+        
+        output.pushFullScreenMapVC
             .drive()
             .disposed(by: disposeBag)
         

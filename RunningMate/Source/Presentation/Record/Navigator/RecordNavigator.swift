@@ -14,10 +14,15 @@ class RecordNavigator {
         self.navigationController = navigationController
     }
     
+    func pushFullScreenMapVC() {
+        self.navigationController?.pushViewController(FullScreenMapViewController(), animated: true)
+    }
+    
     func dismiss() {
-        self.navigationController?.optionAlert("러닝을 중지하시겠습니까?", handler: { [weak self] _ in
+        self.navigationController?.optionAlert("러닝을 종료하시겠습니까?", handler: { [weak self] _ in
             RecordManager.shared.end()
             self?.navigationController?.dismiss(animated: true)
+            self?.navigationController?.presentingViewController?.present(RecordFinishPopupViewController(), animated: true)
         })
     }
 }

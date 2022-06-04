@@ -9,4 +9,5 @@ target 'RunningMate' do
   pod 'Alamofire'
   pod 'RxAlamofire'
   pod 'SnapKit'
+  pod 'XLPagerTabStrip', '~> 9.0'
 end
